@@ -35,15 +35,15 @@ class Controlar():
                     print("|---------------------------------------")
                     print("|----------Escolha sua Classe------------")
                     print("|0 -> Barbaro\
-                        \n|1 -> Dragonborn\
-                        \n|2 -> Dwarf\
-                        \n|3 -> Elf\
-                        \n|4 -> Gnome\
-                        \n|5 -> Human\
-                        \n|6 -> Tiefling")
+                        \n|1 -> Draconato\
+                        \n|2 -> Anão\
+                        \n|3 -> Elfo\
+                        \n|4 -> Gnomo\
+                        \n|5 -> Humano\
+                        \n|6 -> Ladrão")
 
                     type_classe = int(input("|Faça sua escolha: "))
-                    classe = ["Barbaro", "Dragonborn", "Dwarf", "Elf", "Gnome", "Human", "Tiefling"]
+                    classe = ["Barbaro", "Draconato", "Anão", "Elfo", "Gnomo", "Humano", "Ladrão"]
                     
                     match type_classe:
                         case 0 :
@@ -72,11 +72,11 @@ class Controlar():
                             print("|---------------------------------------")
                             print("|Você gostaria de evoluir seu personagem?\
                                 \n|0 -> Para Cancelar\
-                                \n|1-> Dwarf Hill\
-                                \n|2 -> Dwarf Mountain")
+                                \n|1-> Anão da Colina\
+                                \n|2 -> Anão da Montanha")
                             
                             type_classe = int(input("|Faça sua escolha: "))
-                            classe = ["Dwarf", "Dwarf Hill","Dwarf Mountain"]
+                            classe = ["Anão", "Anão da Colina","Anão da Montanha"]
                             match type_classe:
                                 case 0 :
                                     personagem = Dwarf(nome,0,0,0,0,0,0,0,classe[type_classe])
@@ -91,12 +91,12 @@ class Controlar():
                             print("|---------------------------------------")
                             print("|Você gostaria de evoluir seu personagem?\
                                 \n|0 -> Para Cancelar\
-                                \n|1-> Elf High\
-                                \n|2 -> Elf Wood\
-                                \n|3 -> Elf Dark")
+                                \n|1-> Elfo Grande\
+                                \n|2 -> Elfo da Floresta\
+                                \n|3 -> Elfo Negro")
                             
                             type_classe = int(input("|Faça sua escolha: "))
-                            classe = ["Elf", "Elf High","Elf Wood", "Elf Dark"]
+                            classe = ["Elfo", "Elf Grande","Elfo da Floresta", "Elfo Negro"]
                             match type_classe:
                                 case 0 :
                                     personagem = Elf(nome,0,0,0,0,0,0,0,classe[type_classe])
@@ -113,10 +113,10 @@ class Controlar():
                             print("\n|---------------------------------------")
                             print("|Você gostaria de evoluir seu personagem?\
                                 \n|0 -> Para Cancelar\
-                                \n|1-> Gnome Forest\
-                                \n|2 -> Gnome Rock")
+                                \n|1-> Gnomo da Floresta\
+                                \n|2 -> Gnomo da Pedra")
                             type_classe = int(input("|Faça sua escolha: "))
-                            classe = ["Gnome", "Gnome Forest","Gnome Rock"]
+                            classe = ["Gnomo", "Gnomo da Floresta","Gnomo da Pedra"]
                             match type_classe:
                                 case 0 :
                                     personagem = Gnome(nome,0,0,0,0,0,0,0,classe[type_classe])
@@ -148,12 +148,12 @@ class Controlar():
                     print("|-------------------------------------")
                     print("|----------Escolha sua Classe----------")
                     print("|0 -> Barbaro\
-                        \n|1 -> Dragonborn\
-                        \n|2 -> Dwarf\
-                        \n|3 -> Elf\
-                        \n|4 -> Gnome\
-                        \n|5 -> Human\
-                        \n|6 -> Tiefling")
+                        \n|1 -> Draconato\
+                        \n|2 -> Anão\
+                        \n|3 -> Elfo\
+                        \n|4 -> Gnomo\
+                        \n|5 -> Humano\
+                        \n|6 -> Ladrão")
                     
                     type_classe = int(input("|Faça sua escolha: "))
                     
@@ -163,7 +163,7 @@ class Controlar():
                     else:
                         pass 
                     
-                    classe = ["Barbaro", "Dragonborn", "Dwarf", "Elf", "Gnome", "Human", "Tiefling"]
+                    classe = ["Barbaro", "Draconato", "Anão", "Elfo", "Gnomo", "Humano", "Ladrão"]
                     hp = 5 + int(input("|Digite seu hp: "))         
                     strength = int(input("|Digite sua Força: "))       
                     
@@ -218,7 +218,7 @@ class Controlar():
                             print("|---------------------------------------")
                             print("|Você gostaria de evoluir seu personagem?\
                                 \n|0 -> Para Cancelar\
-                                \n|1-> Barbaro Pés Leves\
+                                \n|1 -> Barbaro Pés Leves\
                                 \n|2 -> Barbaro Robusto")
                             
                             type_classe = int(input("|Faça sua escolha: "))
@@ -241,11 +241,11 @@ class Controlar():
                             print("|---------------------------------------")
                             print("|Você gostaria de evoluir seu personagem?\
                                 \n|0 -> Para Cancelar\
-                                \n|1-> Dwarf Hill\
-                                \n|2 -> Dwarf Mountain")
+                                \n|1-> Anão da Colina\
+                                \n|2 -> Anão da Montanha")
                             
                             type_classe = int(input("|Faça sua escolha: "))
-                            classe = ["Dwarf", "Dwarf Hill","Dwarf Mountain"]
+                            classe = ["Anão", "Anão da Colina","Anão da Montanha"]
                             
                             match type_classe:
                                 case 0 :
@@ -261,12 +261,12 @@ class Controlar():
                             print("|---------------------------------------")
                             print("|Você gostaria de evoluir seu personagem?\
                                 \n|0 -> Para Cancelar\
-                                \n|1-> Elf High\
-                                \n|2 -> Elf Wood\
-                                \n|3 -> Elf Dark")
+                                \n|1-> Elfo Grande\
+                                \n|2 -> Elfo da Floresta\
+                                \n|3 -> Elfo Negro")
                             
                             type_classe = int(input("|Faça sua escolha: "))
-                            classe = ["Elf", "Elf High","Elf Wood", "Elf Dark"]
+                            classe = ["Elfo", "Elf Grande","Elfo da Floresta", "Elfo Negro"]
                             
                             match type_classe:
                                 case 0 :
@@ -284,11 +284,11 @@ class Controlar():
                             print("|---------------------------------------")
                             print("|Você gostaria de evoluir seu personagem?\
                                 \n|0 -> Para Cancelar\
-                                \n|1-> Gnome Forest\
-                                \n|2 -> Gnome Rock")
+                                \n|1-> Gnomo da Floresta\
+                                \n|2 -> Gnomo da Pedra")
                             
                             type_classe = int(input("|Faça sua escolha: "))
-                            classe = ["Gnome", "Gnome Forest","Gnome Rock"]
+                            classe = ["Gnomo", "Gnomo da Floresta","Gnomo da Pedra"]
                             
                             match type_classe:
                                 case 0 :
