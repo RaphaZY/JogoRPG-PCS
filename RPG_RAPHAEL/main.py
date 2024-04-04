@@ -1,4 +1,4 @@
-from Controle import Controlar
+from Controle import Controll
 
-controle = Controlar()
+controle = Controll()
 controle.controlar()

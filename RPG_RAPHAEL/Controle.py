@@ -15,7 +15,7 @@ from Tiefling.Tiefling import Tiefling
 from Barbarian.Barbarian_Stouf import Barbarian_Stouf
 from Barbarian.Barbarian_Lightfoot import Barbarian_Lightfoot
 
-class Controlar():
+class Controll():
     def controlar(self):
         while True:
 
@@ -96,7 +96,7 @@ class Controlar():
                                 \n|3 -> Elfo Negro")
                             
                             type_classe = int(input("|Faça sua escolha: "))
-                            classe = ["Elfo", "Elf Grande","Elfo da Floresta", "Elfo Negro"]
+                            classe = ["Elfo", "Elf Alto","Elfo da Floresta", "Elfo Negro"]
                             match type_classe:
                                 case 0 :
                                     personagem = Elf(nome,0,0,0,0,0,0,0,classe[type_classe])

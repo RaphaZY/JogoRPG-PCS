@@ -1,8 +1,9 @@
 from Character import Character
 
+
 class Barbarian_Stouf(Character):
     def __init__(self, name:str, hp:int, strength:int, dexterity:int, constitution:int, wisdom:int, intelligence:int, charisma:int, classe:str) -> None:
-        super().__init__(name, hp, strength, dexterity, constitution, wisdom, intelligence, charisma)
+        super().__init__(name, hp, strength, dexterity, constitution, wisdom, intelligence, charisma, classe)
         self._name = name
         self._classe = classe
         self._hp = hp
