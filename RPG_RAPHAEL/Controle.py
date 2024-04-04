@@ -1,4 +1,4 @@
-from Barbaro.Barbaro import Barbaro
+from Barbarian.Barbarian import Barbarian
 from Dragonborn.Dragonborn import Dragonborn
 from Dwarf.Dwarf import Dwarf
 from Dwarf.Dwarf_Hill import Dwarf_Hill
@@ -12,8 +12,8 @@ from Gnome.Gnome_Forest import Gnome_Forest
 from Gnome.Gnome_Rock import Gnome_Rock
 from Human.Human import Human
 from Tiefling.Tiefling import Tiefling
-from Barbaro.Barbaro_Stouf import Barbaro_Stouf
-from Barbaro.Barbaro_Lightfoot import Barbaro_Lightfoot
+from Barbarian.Barbarian_Stouf import Barbarian_Stouf
+from Barbarian.Barbarian_Lightfoot import Barbarian_Lightfoot
 
 class Controlar():
     def controlar(self):
@@ -34,7 +34,7 @@ class Controlar():
                     nome = str(input("|Digite seu nome: "))
                     print("|---------------------------------------")
                     print("|----------Escolha sua Classe------------")
-                    print("|0 -> Barbaro\
+                    print("|0 -> Bárbaro\
                         \n|1 -> Draconato\
                         \n|2 -> Anão\
                         \n|3 -> Elfo\
@@ -43,25 +43,25 @@ class Controlar():
                         \n|6 -> Ladrão")
 
                     type_classe = int(input("|Faça sua escolha: "))
-                    classe = ["Barbaro", "Draconato", "Anão", "Elfo", "Gnomo", "Humano", "Ladrão"]
+                    classe = ["Bárbaro", "Draconato", "Anão", "Elfo", "Gnomo", "Humano", "Ladrão"]
                     
                     match type_classe:
                         case 0 :
                             print("|---------------------------------------")
                             print("|Você gostaria de evoluir seu personagem?\
                                 \n|0 -> Para Cancelar\
-                                \n|1 -> Barbaro Pés Leves\
-                                \n|2 -> Barbaro Robusto")
+                                \n|1 -> Bárbaro Pés Leves\
+                                \n|2 -> Bárbaro Robusto")
                             
                             type_classe = int(input("|Faça sua escolha: "))
-                            classe = ["Barbaro", "Barbaro Pés Leves","Barbaro Robusto"]
+                            classe = ["Bárbaro", "Bárbaro Pés Leves","Bárbaro Robusto"]
                             match type_classe:
                                 case 0 :
-                                    personagem = Barbaro(nome,0,0,0,0,0,0,0,classe[type_classe])
+                                    personagem = Barbarian(nome,0,0,0,0,0,0,0,classe[type_classe])
                                 case 1 : 
-                                    personagem = Barbaro_Lightfoot(nome,0,0,0,0,0,0,0,classe[type_classe]) 
+                                    personagem = Barbarian_Lightfoot(nome,0,0,0,0,0,0,0,classe[type_classe]) 
                                 case 2 :
-                                    personagem = Barbaro_Stouf(nome,0,0,0,0,0,0,0,classe[type_classe]) 
+                                    personagem = Barbarian_Stouf(nome,0,0,0,0,0,0,0,classe[type_classe]) 
                                 case _:
                                     print("|Erro: Número invalido")   
 
@@ -91,7 +91,7 @@ class Controlar():
                             print("|---------------------------------------")
                             print("|Você gostaria de evoluir seu personagem?\
                                 \n|0 -> Para Cancelar\
-                                \n|1-> Elfo Grande\
+                                \n|1-> Elfo Alto\
                                 \n|2 -> Elfo da Floresta\
                                 \n|3 -> Elfo Negro")
                             
@@ -147,7 +147,7 @@ class Controlar():
                     nome = str(input("|Digite seu nome: "))
                     print("|-------------------------------------")
                     print("|----------Escolha sua Classe----------")
-                    print("|0 -> Barbaro\
+                    print("|0 -> Bárbaro\
                         \n|1 -> Draconato\
                         \n|2 -> Anão\
                         \n|3 -> Elfo\
@@ -163,7 +163,7 @@ class Controlar():
                     else:
                         pass 
                     
-                    classe = ["Barbaro", "Draconato", "Anão", "Elfo", "Gnomo", "Humano", "Ladrão"]
+                    classe = ["Bárbaro", "Draconato", "Anão", "Elfo", "Gnomo", "Humano", "Ladrão"]
                     hp = 5 + int(input("|Digite seu hp: "))         
                     strength = int(input("|Digite sua Força: "))       
                     
@@ -218,19 +218,19 @@ class Controlar():
                             print("|---------------------------------------")
                             print("|Você gostaria de evoluir seu personagem?\
                                 \n|0 -> Para Cancelar\
-                                \n|1 -> Barbaro Pés Leves\
-                                \n|2 -> Barbaro Robusto")
+                                \n|1 -> Bárbaro Pés Leves\
+                                \n|2 -> Bárbaro Robusto")
                             
                             type_classe = int(input("|Faça sua escolha: "))
-                            classe = ["Barbaro", "Barbaro Pés Leves","Barbaro Robusto"]
+                            classe = ["Bárbaro", "Bárbaro Pés Leves","Bárbaro Robusto"]
 
                             match type_classe:
                                 case 0 :
-                                    personagem = Barbaro(nome,0,0,0,0,0,0,0,classe[type_classe])
+                                    personagem = Barbarian(nome,0,0,0,0,0,0,0,classe[type_classe])
                                 case 1 : 
-                                    personagem = Barbaro_Lightfoot(nome,0,0,0,0,0,0,0,classe[type_classe]) 
+                                    personagem = Barbarian_Lightfoot(nome,0,0,0,0,0,0,0,classe[type_classe]) 
                                 case 2 : 
-                                    personagem = Barbaro_Stouf(nome,0,0,0,0,0,0,0,classe[type_classe])  
+                                    personagem = Barbarian_Stouf(nome,0,0,0,0,0,0,0,classe[type_classe])  
                                 case _:
                                     print("|Erro: Número invalido") 
 
@@ -261,12 +261,12 @@ class Controlar():
                             print("|---------------------------------------")
                             print("|Você gostaria de evoluir seu personagem?\
                                 \n|0 -> Para Cancelar\
-                                \n|1-> Elfo Grande\
+                                \n|1-> Elfo Alto\
                                 \n|2 -> Elfo da Floresta\
                                 \n|3 -> Elfo Negro")
                             
                             type_classe = int(input("|Faça sua escolha: "))
-                            classe = ["Elfo", "Elf Grande","Elfo da Floresta", "Elfo Negro"]
+                            classe = ["Elfo", "Elfo Alto","Elfo da Floresta", "Elfo Negro"]
                             
                             match type_classe:
                                 case 0 :
